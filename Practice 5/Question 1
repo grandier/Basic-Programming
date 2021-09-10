@@ -1,0 +1,29 @@
+//https://bit.ly/3ceFFlj
+//Kemas Rafly Omar Thoriq
+
+#include <stdio.h>
+#include <math.h>
+
+float calculateSD(float values[]) {
+    float sum, total, final, mean;
+    int i;
+    for (i = 0; i < 10; ++i) {
+        sum += values[i];
+    }
+    mean = sum / 10;
+    for (i = 0; i < 10; ++i){
+        total += pow(values[i] - mean, 2);
+}
+	final = sqrt(total / 10);
+    return final;
+}
+
+int main() {
+    int i;
+    float values[10];
+    printf("Enter 10 elements: ");
+    for (i = 0; i < 10; ++i)
+        scanf("%f", &values[i]);
+    printf("Standard Deviasi = %.2f", calculateSD(values));
+    return 0;
+}
