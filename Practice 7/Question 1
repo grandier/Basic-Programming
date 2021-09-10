@@ -1,0 +1,41 @@
+// https://bit.ly/3ceFFlj
+// Kemas Rafly Omar Thoriq
+
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct karyawan {
+	char nama[50];
+	int shift;
+	int gaji;
+	int roll;
+}input;
+
+int main (){
+	int i;
+	input s[i];
+	printf("Masukkan informasi Karyawan \n");
+    printf("=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=\n");
+
+
+    for (i = 0; i < 5; ++i) {
+        printf("Karyawan ke %d : ", i+1);
+        scanf("%s %d", &s[i].nama, &s[i].shift);
+	}
+	for(i=0; i<5; i++){
+		if(s[i].shift<70){
+			s[i].gaji = ((s[i].shift)/7)*78000;
+		}
+		else{
+			s[i].gaji=((s[i].shift)/7)*78000 + ((s[i].shift)/7)*78000*0.08;
+		}
+	}
+	printf("\n");
+	for(i=0; i<5; i++){
+		printf("Gaji %s Sebesar %d \n", s[i].nama, s[i].gaji);
+	}
+	printf("=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=\n");
+	return 0;
+}
+	
+	
