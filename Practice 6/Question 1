@@ -1,0 +1,37 @@
+// https://bit.ly/3ceFFlj
+// Kemas Rafly Omar Thoriq
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void pindah(int *a, int *b, int *c, int *d){
+    int i, j;
+    i = *b;
+    j = *c;
+    *b = *a;
+	*a = *d;
+    *c = i;
+    *d = j;
+}
+
+int main() {
+    int w, x, y, z;
+	
+    printf("Masukkan 4 angka : ");
+    scanf("%d %d %d %d", &w, &x, &y, &z);
+    
+    printf("=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~==~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=\n");
+    printf("Variabel			a		b		c		d\n");
+    printf("\n");
+    
+    printf("Sebelum Function Dipanggil 	%d		%d 		%d 		%d\n", w, x, y, z);
+	printf("\n");
+	
+    pindah(&w, &x, &y, &z);
+
+    printf("Setelah Function Dipanggil 	%d		%d 		%d 		%d\n", w, x, y, z);
+	printf("=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~==~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=\n");
+
+    return 0;
+}
+
