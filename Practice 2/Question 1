@@ -1,0 +1,31 @@
+//https://bit.ly/3ceFFlj
+
+#include <stdio.h>
+
+int main(){
+	int angka;
+	int max;
+	int min;
+	
+	printf("Masukan angka berapa pun\nUntuk mengakhiri masukan -1:\n");
+	scanf("%d",&angka);
+	max=angka;
+	min=angka;
+	if(angka!=-1){
+		while(angka != -1){
+	if (max<angka){
+		max = angka;
+	}else{
+		max=max;
+	}
+	if (min>angka){
+		min = angka;
+	}else {
+		min=min;
+	}	printf("Nilai Maksimum adalah = %d\n", max);
+		printf("Nilai Minimum adalah = %d\n", min);
+	scanf("%d", &angka);
+	}
+}
+return 0;
+}

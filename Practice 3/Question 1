@@ -1,0 +1,49 @@
+//https://bit.ly/3ceFFlj
+//Kemas Rafly Omar Thoriq
+
+#include <stdio.h>
+
+int main(){
+	int angka1, angka2, angka3, angka4, angka5;
+	int i;
+
+printf("Masukan angka 1- 30 =\n");
+scanf("%d %d %d %d %d", &angka1, &angka2, &angka3, &angka4, &angka5);
+
+if (angka1 <= 30 && angka1 >= 1){
+for (i = 1; i <= angka1; i++){
+	printf("*");
+}
+}
+printf("\n");
+
+if (angka2 <= 30 && angka2 >= 1){
+for (i = 1; i <= angka2; i++){
+	printf("*");
+}
+}
+printf("\n");
+
+if (angka3 <= 30 && angka3 >= 1){
+for (i = 1; i <= angka3; i++){
+	printf("*");
+}
+}
+printf("\n");
+
+if (angka4 <= 30 && angka4 >= 1){
+for (i = 1; i <= angka4; i++){
+	printf("*");
+}
+}
+printf("\n");
+
+if (angka5 <= 30 && angka5 >= 1){
+for (i = 1; i <= angka5; i++){
+	printf("*");
+}
+}
+else printf("\nUlangin angka yang dimasukkan");
+return 0;
+}
+
